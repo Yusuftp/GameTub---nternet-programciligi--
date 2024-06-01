@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kendine Göre Olan Oyunları Bul</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <label for="q1">1. Hangi tür oyunları seversiniz?</label>
+                <select id="q1" name="q1">
+                    <option value="action">Aksiyon</option>
+                    <option value="adventure">Macera</option>
+                    <option value="puzzle">Bulmaca</option>
+                    <option value="strategy">Strateji</option>
+                    <option value="sports">Spor</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q2">2. Oyunları hangi platformda oynarsınız?</label>
+                <select id="q2" name="q2">
+                    <option value="pc">PC</option>
+                    <option value="console">Konsol</option>
+                    <option value="mobile">Mobil</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q3">3. Multiplayer oyunları sever misiniz?</label>
+                <select id="q3" name="q3">
+                    <option value="yes">Evet</option>
+                    <option value="no">Hayır</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q4">4. En çok hangi yaş grubuna hitap eden oyunları tercih edersiniz?</label>
+                <select id="q4" name="q4">
+                    <option value="kids">Çocuklar</option>
+                    <option value="teens">Gençler</option>
+                    <option value="adults">Yetişkinler</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q5">5. Oyun süresi ne kadar olmalı?</label>
+                <select id="q5" name="q5">
+                    <option value="short">Kısa (0-30 dakika)</option>
+                    <option value="medium">Orta (30-60 dakika)</option>
+                    <option value="long">Uzun (60+ dakika)</option>
+                </select>
+            </div>
+            <button type="button" onclick="suggestGame()">Oyun Öner</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
